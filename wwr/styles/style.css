@@ -24,21 +24,24 @@ body {
     background-color: #fcfbfb; 
 }
 header {
-    background-color:rgb(49, 109, 165);
+    background-color: #19397c;
 }
 nav a:hover {
-    background-color: rgb(19, 35, 80);
-    color: #ffffff;
+    background-color: #ffc93c;
+    color: black;
 }
-.book, .join {
-    background-color: rgb(19, 35, 80);
-    color: #ffffff;
+.book {
+    color: black;
     text-decoration: none;
     
 }
+.join {
+    color: white;
+    text-decoration: none;
+}
 .book:hover, .join:hover {
-    background-color: rgb(49, 109, 165);
-    color: #d9c2a3;
+    background-color: #ffc93c;
+    color: black;
 }
 .msg {
     background-color: rgb(49, 109, 165);
@@ -60,11 +63,12 @@ h4 {
     color: #ffffff;
 }
 footer a{
+    background: ;
     color: #ffffff;
     text-decoration: none;
 }
 footer a:hover {    
-    color: #d9c2a3;
+    color: #ffc93c;
 }
 .logo {
     width: 80px;
@@ -75,14 +79,22 @@ footer a:hover {
 #hero-img {
     width: 100%;
 }
+footer {
+    background-color: #19397c;
+}
 footer p {
     font-size: 1.2em;
 } 
 footer p a:hover {
-    text-decoration: underline;
+    text-decoration: none;
+    background-color: #ffc93c;
+    color: black;
 }
 nav a {
     text-align: center;
     color: #fcfbfb;
     text-decoration: none;
+}
+.msg {
+    background-color: #19397c;
 }
