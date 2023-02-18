@@ -5,7 +5,7 @@ Fonts are separated by a | */
 
 
 
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,600&family=Nunito:wght@200&family=Playfair+Display&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@700&family=Roboto:wght@300&display=swap');
 
 
 
@@ -14,22 +14,22 @@ Fonts are separated by a | */
 --primary-color: #0c2840   ;
 --secondary-color: #1cdaff ;
 --accent1-color: #f1a208;
---accent2-color: #00fca8;
+--accent2-color: #ffffff;
 
 /* change the values below to your chosen font(s) */
---heading-font: 'Playfair Display', sans-serif;
---paragraph-font: 'Montserrat';
+--heading-font: Roboto Condensed, sans-serif;
+--paragraph-font: Roboto;
 
 /* these colors below should be chosen from among your palette colors above */
---headline-color-on-white: #396E94;  /* headlines on a white background */ 
+--headline-color-on-white: #0c2840;  /* headlines on a white background */ 
 --headline-color-on-color: white; /* headlines on a colored background */ 
---paragraph-color-on-white: #396E94; /* paragraph text on a white background */ 
+--paragraph-color-on-white: #0c2840; /* paragraph text on a white background */ 
 --paragraph-color-on-color: white; /* paragraph text on a colored background */ 
---paragraph-background-color: #396E94  ;
---nav-link-color: #396E94;
---nav-background-color: #D4AC0D;
+--paragraph-background-color: #0c2840;
+--nav-link-color: #1cdaff;
+--nav-background-color: #0c2840;
 --nav-hover-link-color: white;
---nav-hover-background-color: #396E94;
+--nav-hover-background-color: #f1a208;
 }
 
 
@@ -89,6 +89,7 @@ p {
 
 .primary {
     background-color: var(--primary-color);
+    color: white;
 }
 .secondary {
     background-color: var(--secondary-color);
@@ -121,6 +122,7 @@ nav a {
     min-width: 120px;
     text-decoration: none;
     padding: 10px;
+    font-family: var(--heading-font);
 
 }
 nav a:link, nav a:visited {
@@ -134,6 +136,7 @@ nav a:hover {
 .sitemap {
         display: grid;
         justify-content: center;
+        font-family: var(--paragraph-font);
 
     grid-template-columns: repeat(6, 15%);
     grid-template-rows: 3em 1.5em 1.5em 3em;
