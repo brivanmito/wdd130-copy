@@ -43,7 +43,7 @@ main section{
 }
 #background {
     height: 725px;
-    background-color: #aed6f0;
+    background-color: #1d3557;
 }
 body {
     background-color: #fcfbfb;
@@ -92,7 +92,7 @@ footer {
 
 }
 .home-title {
-    color: #19397c;
+    color: #ffc93c;
     font-family: 'Roboto Condensed', Arial, Verdana;
     font-size: 2em;
     margin-top: 15px;
@@ -167,7 +167,7 @@ footer .social img{
 }
 
 .card-img {
-    border: 10px solid #ffc93c;
+    border: 10px solid #19397c;
     transition: transform .5s;
     box-shadow: 5px 5px 10px #6f7364;
 }
@@ -218,6 +218,7 @@ nav {
     padding: 35px;
     box-shadow: 5px 5px 10px #6f7364;
 }
+
 
 
 @media screen and (max-width: 900px) {
