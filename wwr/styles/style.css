@@ -325,6 +325,7 @@ body {
     grid-row: 3/4;
     align-self: center;
     padding: 50px 0px;
+    
 }
 .gallery-box img {
     border: 10px solid #19397c;
