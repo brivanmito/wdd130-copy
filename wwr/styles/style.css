@@ -152,7 +152,7 @@ footer .social img{
     padding: 35px;
 }
 .home-grid {
-    font-family: Roboto Condensed;
+    font-family: 'Roboto Condensed';
     display: grid;
     grid-template-columns: repeat(10, 1fr);
 }
@@ -325,7 +325,7 @@ body {
     grid-row: 3/4;
     align-self: center;
     padding: 50px 0px;
-    
+
 }
 .gallery-box img {
     border: 10px solid #19397c;
