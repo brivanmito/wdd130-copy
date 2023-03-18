@@ -270,6 +270,7 @@ footer p a:hover {
 }
 @media screen and (max-width: 900px) {
     nav, footer {
+        box-sizing: border-box;
         display: block;
         padding: 15px;
     }
