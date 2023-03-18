@@ -282,4 +282,13 @@ footer p a:hover {
     #values-box {
         justify-content: center;
     }
+    .container {
+        width: 80%;
+        display: inline;
+        align-self: center;
+        justify-self: center;
+    }
+    #info-card {
+        display: inline;
+    }
 }
