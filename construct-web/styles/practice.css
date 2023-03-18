@@ -276,6 +276,7 @@ footer p a:hover {
         display:inline;
     }
     #hero-msg {
+        padding: 20px;
         text-align: center;
     }
     #values-box {
