@@ -186,3 +186,6 @@ img {
     width: 50%;
     padding: 20px;
 }
+#logo {
+    background-color: var(--primary-color);
+}
