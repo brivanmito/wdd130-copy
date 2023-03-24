@@ -447,6 +447,9 @@ footer p a:hover {
     #hero-msg-inspiration {
         position: static;
     }
+    .slideshow-container img {
+        width: 100%;
+    }
     .content-inspiration-1 {
         display: inline-block;
         justify-content: center;
