@@ -325,7 +325,9 @@ footer p a:hover {
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr 1fr;
   }
-  
+  .slideshow-container img{
+    width: 100%;
+  }
   /* Next & previous buttons */
   .prev, .next {
     cursor: pointer;
