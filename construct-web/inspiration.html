@@ -22,33 +22,69 @@
         </header>
     </div>
     <main>
-        <div id="hero">
-            <div id="hero-box">
-                <img id="hero-img" src="images/rsz_7888138_3795147.jpg" alt="Web Page Mockup">
-                <img id="hero-img-inspiration" src="images/rsz_7436477_3606616.jpg" alt="Web Page Mockup">
-            </div>
-            <section id="hero-msg-inspiration">
-                <h1 class="home-title-inspiration">Find inspiration and adjust it to my needs. </h1>
-                <div class="buttom-box-inspiration">
-                    <a id="book-inspiration" href="#" target="_blank">Book Now</a>
+        <div class="slideshow-container">
+            <div id="hero-msg-inspiration">
+                <h2>Find inspiration and adjust it to my needs</h2>
+                <div class="button-box-inspiration">
+                    <a id="book" href="#" target="_blank">Contact Us</a>
                 </div>
-            </section>
+            </div>
+            <div class="mySlides1">
+              <img src="images/Inspiration-img-1.jpg" style="width:100%">
+            </div>
+            <div class="mySlides1">
+              <img src="images/Inspiration-img-2.jpg" style="width:100%">
+            </div>
+            <div class="mySlides1">
+              <img src="images/Inspiration-img-3.jpg" style="width:100%">
+            </div>
+            <div class="mySlides1">
+              <img src="images/Inspiration-img-4.jpg" style="width:100%">
+            </div>
+            <a class="prev" onclick="plusSlides(-1, 0)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1, 0)">&#10095;</a>
         </div>
+        <script>
+          let slideIndex = [1,1];
+          let slideId = ["mySlides1"]
+          showSlides(1, 0);
+          
+          function plusSlides(n, no) {
+            showSlides(slideIndex[no] += n, no);
+          }
+          
+          function showSlides(n, no) {
+            let i;
+            let x = document.getElementsByClassName(slideId[no]);
+            if (n > x.length) {slideIndex[no] = 1}    
+            if (n < 1) {slideIndex[no] = x.length}
+            for (i = 0; i < x.length; i++) {
+              x[i].style.display = "none";  
+            }
+            x[slideIndex[no]-1].style.display = "block";  
+          }
+          </script>
         <div id="images-description-inspiration">
-            <div>
-                <h2>Your brand, your style</h2>
+            <div class="content-inspiration-1">
                 <img src="images/type-font.png" alt="Type fonts">
-                <p>You've thought about what kind of style you want to give your brand and content. We believe that font, size and spacing is important. We will advise you with the best option.</p>
+                <div>
+                  <h2>Your brand, your style</h2>
+                  <p>You've thought about what kind of style you want to give your brand and content. We believe that font, size and spacing is important. We will advise you with the best option.</p>
+                </div>
             </div>
-            <div>
+            <div class="content-inspiration-2">
+              <div>
                 <h2>Captivating colors</h2>
-                <img src="images/pallete-colors.png" alt="Colors">
                 <p>A website with the right color palette is important to make it pleasing to your customers. No matter if you know colorimetry or not, we help you to select a color palette for your business.</p>
+              </div>
+                <img src="images/pallete-colors.png" alt="Colors">
             </div>
-            <div>
-                <h2>High resolution images without affecting the speed of your site</h2>
+            <div class="content-inspiration-1">
                 <img src="images/batido-vista-frontal-moras-arandanos.jpg" alt="">
-                <p>We find the balance between having good resolution images and having a fast loading page. It doesn't matter if you don't have pictures, we help you with ideas on how to photograph your products.</p>
+                <div>
+                  <h2>High resolution images without affecting the speed of your site</h2>
+                  <p>We find the balance between having good resolution images and having a fast loading page. It doesn't matter if you don't have pictures, we help you with ideas on how to photograph your products.</p>
+                </div>
             </div>
         </div>
     </main>
