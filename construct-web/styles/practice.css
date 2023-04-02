@@ -472,3 +472,15 @@ footer p a:hover {
         text-align: center;
     }
 }
+
+/*CSS for the second child page*/
+
+#principal_grid_why {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto;
+}
+#hero-why {
+    grid-column: 1/2;
+    grid-row: 1/2;
+}

@@ -22,31 +22,60 @@
         </header>
     </div>
     <main>
-        <div id="hero">
-            <div id="hero-box">
-                <img id="hero-img" src="images/jovenes-tiro-medio-resenas.jpg" alt="Computer">
+        <div id="principal-grid-why">
+            <div class="slideshow-container">
+                <div class="mySlides1">
+                    <img src="images/testimonio-1.jpg" alt="Construct Web Page 1">
+                </div>
+                <div class="mySlides1">
+                    <img src="images/jovenes-tiro-medio-resenas.jpg" alt="Construct Web Page 2">
+                </div>
+                <div class="mySlides1">
+                    <img src="images/testimonio-2.jpg" alt="Construct Web Page 3">
+                </div>
+                <a class="prev" onclick="plusSlides(-1, 0)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1, 0)">&#10095;</a>
             </div>
-            <section id="hero-msg-comments">
-                <img src="images/profile-pic-man.jpg" alt="Profile man">
-                <img src="images/profile-pic-women.jpg" alt="Profile women">
-                <h3>Bruno Mars</h3>
-                <h4>Owner lemonade bussiness</h4>
-                <p>"Construct web helped me to reach more customers with the creation of a website for my business, working with them is an enriching experience and has given me positive results in my sales."</p>
-            </section>
-        </div>
-        <div id="images-description-why">
-            <h2>Why have a web site?</h2>
-            <div class="content-info-why">
-                <img src="images/rsz_concepto-negocio-corporativo-tecnologia-apreton-manos-empresarial.jpg" alt="Negociation">
-                <p>Having a website becomes your digital business card. When we develop a website, we are actually creating a digital business card. Because customers can receive more information about your business through your website. They will also be able to know what products you sell, what your specialty is and you will generate interest in people regarding your content.</p>
-            </div>
-            <div class="content-info-why">
-                <img src="images/rsz_hombre-camisa-corbata-dibujando-flecha.jpg" alt="Man graphing">
-                <p>The website is also a way to generate credibility for your brand. Many people want to know who is behind the business, and who performs the operations, it is a way to present your company. A website pays attention to visitors' reviews in order to offer them a better service. When you listen to your customers you will generate confidence in your audience. Additionally, the consumer can feel more secure knowing that it is an updated site.</p>
-            </div>
-            <div class="content-info-why">
-                <img src="images/rsz_6144803_3107569.jpg" alt="Man graphing">
-                <p>With the visits of your customers to your website your sales will increase. There are some tricks that marketers use to generate interest in your products. At the end of the day, that is the purpose of creating a website, so the goal is to positively influence an increase in the consumption of your products. We will make sure this happens with the creation of your nice and attractive website.</p>
+            <script>
+                let slideIndex = [1,1];
+                let slideId = ["mySlides1"]
+                showSlides(1, 0);
+                
+                function plusSlides(n, no) {
+                showSlides(slideIndex[no] += n, no);
+                }
+                
+                function showSlides(n, no) {
+                let i;
+                let x = document.getElementsByClassName(slideId[no]);
+                if (n > x.length) {slideIndex[no] = 1}    
+                if (n < 1) {slideIndex[no] = x.length}
+                for (i = 0; i < x.length; i++) {
+                    x[i].style.display = "none";  
+            }
+            x[slideIndex[no]-1].style.display = "block";  
+            }
+            </script>
+            <div id="images-description">
+                <h2>Why have a web site?</h2>
+                <div class="container">
+                    <img src="images/rsz_concepto-negocio-corporativo-tecnologia-apreton-manos-empresarial.jpg" alt="Negociation">
+                    <div class="content">
+                        <p>Having a website becomes your digital business card. When we develop a website, we are actually creating a digital business card. Because customers can receive more information about your business through your website. They will also be able to know what products you sell, what your specialty is and you will generate interest in people regarding your content.</p>
+                    </div>
+                </div>
+                <div class="container">
+                    <img src="images/rsz_hombre-camisa-corbata-dibujando-flecha.jpg" alt="Man graphing">
+                    <div class="content">
+                        <p>The website is also a way to generate credibility for your brand. Many people want to know who is behind the business, and who performs the operations, it is a way to present your company. A website pays attention to visitors' reviews in order to offer them a better service. When you listen to your customers you will generate confidence in your audience. Additionally, the consumer can feel more secure knowing that it is an updated site.</p>
+                    </div>
+                </div>
+                <div class="container">
+                    <img src="images/rsz_6144803_3107569.jpg" alt="Man graphing">
+                    <div class="content">
+                        <p>With the visits of your customers to your website your sales will increase. There are some tricks that marketers use to generate interest in your products. At the end of the day, that is the purpose of creating a website, so the goal is to positively influence an increase in the consumption of your products. We will make sure this happens with the creation of your nice and attractive website.</p>
+                    </div>
+                </div>
             </div>
         </div>
     </main>
