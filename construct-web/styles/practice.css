@@ -489,7 +489,7 @@ footer p a:hover {
 }
 /*Css for contactus.html*/
 
-main {
+#fprincipal {
     padding: 3%;
 }
 form {
@@ -511,7 +511,6 @@ ul {
 form li + li {
     margin-top: 1em;
 }
-
 
 label {
     /* Uniform size & alignment */
