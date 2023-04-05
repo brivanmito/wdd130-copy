@@ -612,4 +612,8 @@ button {
     .content-why {
         display: block;
     }
+    .content-why:hover {
+        background: rgba(12, 40, 64, 1);
+        color: rgba(241, 241, 241, 1);
+    }
 }
